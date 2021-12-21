@@ -10,16 +10,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/index.html'));
 });
 app.get('/forums', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', '/forums.html'));
+    res.sendFile(path.join(__dirname, '/forums.html'));
 });
 app.get('/admins', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', '/admins.html'));
+    res.sendFile(path.join(__dirname, '/admins.html'));
 });
 app.get('/servers', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', '/servers.html'));
+    res.sendFile(path.join(__dirname, '/servers.html'));
 });
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public', '/about.html'));
+    res.sendFile(path.join(__dirname, '/about.html'));
 });
 
 
