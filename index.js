@@ -7,19 +7,19 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname + 'public')));
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', '/index.html'));
 });
 app.get('/forums', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', '/forums.html'));
 });
 app.get('/admins', (req, res) => {
-    res.sendFile(path.join(__dirname, 'admins.html'));
+    res.sendFile(path.join(__dirname, 'public', '/admins.html'));
 });
 app.get('/servers', (req, res) => {
-    res.sendFile(path.join(__dirname, 'servers.html'));
+    res.sendFile(path.join(__dirname, 'public', '/servers.html'));
 });
 app.get('/about', (req, res) => {
-    res.sendFile(path.join(__dirname, 'about.html'));
+    res.sendFile(path.join(__dirname, 'public', '/about.html'));
 });
 
 
