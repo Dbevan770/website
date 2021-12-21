@@ -5,12 +5,12 @@ const app = express();
 const server = http.createServer(app);
 const port = 3000;
 
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static(path.join(__dirname + 'public')));
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 app.get('/forums', (req, res) => {
-    res.sendFile(path.join(__dirname, 'forums.html'));
+    res.sendFile(path.join(__dirname, 'public', '/forums.html'));
 });
 app.get('/admins', (req, res) => {
     res.sendFile(path.join(__dirname, 'admins.html'));
